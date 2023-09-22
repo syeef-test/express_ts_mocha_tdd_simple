@@ -1,0 +1,30 @@
+{
+  "name": "express_ts_mocha_tdd_simple",
+  "version": "1.0.0",
+  "description": "simple setup ts and express with mocha",
+  "main": "index.js",
+  "scripts": {
+    "build":"tsc -p .",
+    "dev":"NODE_ENV=dev nodemon -r tsconfig-paths/register src/app.ts",
+    "test": "NODE_ENV=test mocha --check-leaks -r tsconfig-paths/register -r ts-node/register \"test/**/*.spec.ts\""
+  },
+  "author": "kazi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.6.3",
+    "@types/supertest": "^2.0.12",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typecript": "^0.0.1-security"
+  }
+}
