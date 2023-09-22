@@ -1,0 +1,7 @@
+npm i --save express dotenv
+npm i -D mocha chai typecript nodemon supertest ts-node tsconfig-paths
+npm i -D @types/chai @types/mocha @types/node @types/supertest
+tsc --init
+npm test
+npm i -D @types/express
+npm run dev
